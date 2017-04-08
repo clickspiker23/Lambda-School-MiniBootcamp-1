@@ -16,20 +16,24 @@ function areSameLength(str1, str2) {
   //return true if the two strings have the same length
   //otherwise return false
   //code here
-  if(str1.length === str2.length) {
+  if(str1.length === str2.length){
     return true;
   }
-  return false;
+  else{
+    return false;
+  }
 }
 
 function areEqual(x, y) {
   //return true if x and y are the same
   //otherwise return false
   //code here
-  if(x===y){
+  if(x === y){
     return true;
   }
-  return false;
+  else {
+    return false;
+  }
 }
 
 function lessThanNinety(num) {
@@ -39,7 +43,9 @@ function lessThanNinety(num) {
   if(num < 90){
     return true;
   }
-  return false;
+  else{
+    return false;
+  }
 }
 
 function greaterThanFifty(num) {
@@ -49,7 +55,9 @@ function greaterThanFifty(num) {
   if(num > 50){
     return true;
   }
-  return false;
+  else {
+    return false;
+  }
 }
 
 function add(x, y) {
@@ -86,26 +94,30 @@ function isEven(num) {
   //return true if num is even
   //otherwise return false
   //code here
-  if(num % 2 == 0){
+  if(num % 2 === 0){
     return true;
   }
-  return false;
+  else{
+    return false;
+  }
 }
 
 function isOdd(num) {
-  //return true if num is odd
+  //return true if num is false
   //otherwise return false
   //code here
   if(num % 2 != 0){
     return true;
   }
-  return false;
+  else{
+    return false;
+  }
 }
 
 function square(num) {
   //square num and return the new value
   //code here
-  return Math.pow(num, 2);
+  return num * num;
 }
 
 function cube(num) {
@@ -164,17 +176,17 @@ function getRectangleArea(length, width) {
 function getTriangleArea(base, height) {
   //return the area of the triangle by using base and height
   //code here
-  return base * height * 0.5;
+  return 0.5 * (base * height);
 }
 
 function getCircleArea(radius) {
   //return the rounded area of the circle given the radius
   //code here
-  return Math.round(Math.PI * Math.pow(radius, 2));
+  return Math.round(Math.PI * (radius * radius));
 }
 
 function getRectangularPrismVolume(length, width, height) {
-  //return the area of the 3D rectangular prism given the length, width, and height
+  //return the volume of the 3D rectangular prism given the length, width, and height
   //code here
   return length * width * height;
 }
